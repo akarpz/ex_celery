@@ -81,7 +81,7 @@ defmodule ExCelery do
       args: args,
       kwargs: kwargs,
     }
-    {task_id, Poison.encode!(message)}
+    {task_id, Jason.encode!(message)}
   end
 
 end

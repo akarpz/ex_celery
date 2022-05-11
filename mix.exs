@@ -29,10 +29,10 @@ defmodule ExCelery.Mixfile do
   defp deps do
     [
       {:amqp_client, git: "https://github.com/jbrisbin/amqp_client.git", override: true},
-      {:amqp, "0.1.4"},
-      {:poison, "~> 2.2"},
+      {:amqp, "3.1.1"},
+      {:jason, "1.3.0"},
       {:uuid, "~> 1.1"},
-      {:mock, "~> 0.2.0", only: :test},
+      {:mock, "~> 0.3.7", only: :test},
     ]
   end
 
@@ -45,11 +45,11 @@ defmodule ExCelery.Mixfile do
 
   defp package do
     [
-     maintainers: ["Rob Golding"],
+     maintainers: ["Rob Golding", "Adam Karpowich"],
      licenses: ["MIT"],
      links: %{
-       "GitHub" => "https://github.com/robgolding/ex_celery",
-       "Docs" => "https://github.com/robgolding/ex_celery",
+       "GitHub" => "https://github.com/akarpz/ex_celery",
+       "Docs" => "https://github.com/akarpz/ex_celery",
      },
   ]
   end
