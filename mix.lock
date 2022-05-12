@@ -1,10 +1,13 @@
 %{
   "amqp": {:hex, :amqp, "3.1.1", "a96ee272d196dfd1bf4ffc15dc7dcf900004d928dbdc6f5fcb80e6b0da03927c", [:mix], [{:amqp_client, "~> 3.9.1", [hex: :amqp_client, repo: "hexpm", optional: false]}], "hexpm", "ee7ca576351b4629b6be0701db8c085e203e242c577c59f344be56ef5a262056"},
-  "amqp_client": {:git, "https://github.com/jbrisbin/amqp_client.git", "d50aec00b94f0766a048b4eceaf25ddfdeeb1d86", []},
+  "amqp_client": {:hex, :amqp_client, "3.9.17", "de40074618944aefd3fe179c150051f4507a66ce3ef7f77eaece69ef731acd64", [:make, :rebar3], [{:rabbit_common, "3.9.17", [hex: :rabbit_common, repo: "hexpm", optional: false]}], "hexpm", "3a746e468dcb9dab869cbd63eb9442b34fbca52f29247885ba807431be0f596a"},
+  "credentials_obfuscation": {:hex, :credentials_obfuscation, "3.0.0", "cb1bcff1b7d33286efdbc9f73a1f40adb1e64501e81bb9c00b67e61611bee56a", [:rebar3], [], "hexpm", "bf2060c7058d4e765cdb4319ec94ad71c00d102931d667415b2cd5e991d9d038"},
   "jason": {:hex, :jason, "1.3.0", "fa6b82a934feb176263ad2df0dbd91bf633d4a46ebfdffea0c8ae82953714946", [:mix], [{:decimal, "~> 1.0 or ~> 2.0", [hex: :decimal, repo: "hexpm", optional: true]}], "hexpm", "53fc1f51255390e0ec7e50f9cb41e751c260d065dcba2bf0d08dc51a4002c2ac"},
+  "jsx": {:hex, :jsx, "3.1.0", "d12516baa0bb23a59bb35dccaf02a1bd08243fcbb9efe24f2d9d056ccff71268", [:rebar3], [], "hexpm", "0c5cc8fdc11b53cc25cf65ac6705ad39e54ecc56d1c22e4adb8f5a53fb9427f3"},
   "meck": {:hex, :meck, "0.9.2", "85ccbab053f1db86c7ca240e9fc718170ee5bda03810a6292b5306bf31bae5f5", [:rebar3], [], "hexpm", "81344f561357dc40a8344afa53767c32669153355b626ea9fcbc8da6b3045826"},
   "mock": {:hex, :mock, "0.3.7", "75b3bbf1466d7e486ea2052a73c6e062c6256fb429d6797999ab02fa32f29e03", [:mix], [{:meck, "~> 0.9.2", [hex: :meck, repo: "hexpm", optional: false]}], "hexpm", "4da49a4609e41fd99b7836945c26f373623ea968cfb6282742bcb94440cf7e5c"},
   "poison": {:hex, :poison, "2.2.0", "4763b69a8a77bd77d26f477d196428b741261a761257ff1cf92753a0d4d24a63", [:mix], [], "hexpm", "519bc209e4433961284174c497c8524c001e285b79bdf80212b47a1f898084cc"},
-  "rabbit_common": {:git, "https://github.com/jbrisbin/rabbit_common.git", "80814606ae23cc820c74e443383e192cd69ec030", [ref: ""]},
+  "rabbit_common": {:hex, :rabbit_common, "3.9.17", "b1049c87d2534f6f096a331e8760b9c7f2ee327acbb886d1ee2e51b917bc012c", [:make, :rebar3], [{:credentials_obfuscation, "3.0.0", [hex: :credentials_obfuscation, repo: "hexpm", optional: false]}, {:jsx, "3.1.0", [hex: :jsx, repo: "hexpm", optional: false]}, {:recon, "2.5.2", [hex: :recon, repo: "hexpm", optional: false]}], "hexpm", "2aea0067689910fce5d393361d6ac60eecd372c9a5ecc936c3e6a135e1bce833"},
+  "recon": {:hex, :recon, "2.5.2", "cba53fa8db83ad968c9a652e09c3ed7ddcc4da434f27c3eaa9ca47ffb2b1ff03", [:mix, :rebar3], [], "hexpm", "2c7523c8dee91dff41f6b3d63cba2bd49eb6d2fe5bf1eec0df7f87eb5e230e1c"},
   "uuid": {:hex, :uuid, "1.1.4", "36c7734e4c8e357f2f67ba57fb61799d60c20a7f817b104896cca64b857e3686", [:mix], [], "hexpm", "55ceed2fe12062e3e0bf19baa118d0ac64eb6edd79f242aaaf090236f09965f0"},
 }

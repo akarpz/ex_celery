@@ -29,7 +29,8 @@ defmodule ExCelery.MixProject do
 
   defp deps do
     [
-      {:amqp_client, git: "https://github.com/jbrisbin/amqp_client.git", override: true},
+      {:amqp_client, "~> 3.9.1"},
+      # {:amqp_client, git: "https://github.com/jbrisbin/amqp_client.git", override: true},
       {:amqp, "3.1.1"},
       {:jason, "1.3.0"},
       {:uuid, "~> 1.1"},
