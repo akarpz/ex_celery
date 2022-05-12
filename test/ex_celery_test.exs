@@ -17,7 +17,7 @@ defmodule ExCeleryTest do
 
   defp get_message(chan) do
     {:ok, payload, meta} = AMQP.Basic.get(chan, "celery", [no_ack: true])
-    {Poison.Parser.parse!(payload), meta}
+    {Jason.decode!(payload), meta}
   end
 
   test "apply_async empty", %{chan: chan} do

@@ -1,19 +1,20 @@
-defmodule ExCelery.Mixfile do
+defmodule ExCelery.MixProject do
   use Mix.Project
 
   def project do
     [
       app: :ex_celery,
       version: "0.2.0",
+      elixir: "~> 1.13",
       description: description(),
       package: package(),
       deps: deps(),
     ]
   end
 
-  def application do
-    application(Mix.env)
-  end
+  # def application do
+  #   application(Mix.env)
+  # end
 
   def application(:test) do
     [applications: [:logger]]
